@@ -1,9 +1,12 @@
 import logging
 import boto3
-import json
-import argparse
 from botocore.exceptions import ClientError, EndpointConnectionError
+
+#for testing functionality
 import os
+from dotenv import load_dotenv
+load_dotenv(".env")
+
 
 class AWS:
     def __init__(self,aws_access_key,aws_secret_access_key,bucket):
@@ -28,7 +31,7 @@ class AWS:
             format='%(asctime)s >> %(levelname)s >> %(message)s'
         )
 
-    def putObject(self,bucket_name):
+    def getObject(self,bucket_name):
         """Create an S3 bucket in  S3 default region (us-east-1).
         Args:
             param bucket_name: Bucket to create
@@ -48,7 +51,7 @@ class AWS:
         else:
             return True
 
-    def upload_file(self,file_name,object_name=None):
+    def putObject(self,file_name,object_name=None):
         """Upload a file to S3 
         Args:
             param file_name: File to upload
@@ -74,9 +77,7 @@ class AWS:
             
 
 if __name__ == "__main__":
-    import os
-    from dotenv import load_dotenv
-    load_dotenv(".env")
+
 
     ACCESS_KEY_ID = os.environ.get("ACCESS_KEY_ID")
     SECRET_ACCESS_KEY = os.environ.get("SECRET_ACCESS_KEY")
