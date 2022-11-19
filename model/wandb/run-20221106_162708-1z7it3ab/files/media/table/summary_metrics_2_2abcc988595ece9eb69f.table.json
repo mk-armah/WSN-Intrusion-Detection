@@ -1,0 +1,1 @@
+{"columns": ["metric_name", "metric_value", "model_name"], "data": [["accuracy_score", 0.99, "Pipeline"], ["precision", 0.99, "Pipeline"], ["recall", 0.99, "Pipeline"], ["f1_score", 0.99, "Pipeline"]]}

@@ -1,0 +1,63 @@
+2022-11-06 16:27:08,269 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Configure stats pid to 16796
+2022-11-06 16:27:08,269 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Loading settings from C:\Users\mk-armah\.config\wandb\settings
+2022-11-06 16:27:08,269 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Loading settings from D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\settings
+2022-11-06 16:27:08,269 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-11-06 16:27:08,270 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-11-06 16:27:08,270 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Applying login settings: {'force': True}
+2022-11-06 16:27:08,271 INFO    MainThread:16796 [wandb_init.py:_log_setup():476] Logging user logs to D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\run-20221106_162708-1z7it3ab\logs\debug.log
+2022-11-06 16:27:08,271 INFO    MainThread:16796 [wandb_init.py:_log_setup():477] Logging internal logs to D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\run-20221106_162708-1z7it3ab\logs\debug-internal.log
+2022-11-06 16:27:08,272 INFO    MainThread:16796 [wandb_init.py:init():516] calling init triggers
+2022-11-06 16:27:08,272 INFO    MainThread:16796 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-11-06 16:27:08,272 INFO    MainThread:16796 [wandb_init.py:init():535] re-initializing run, found existing run on stack: 1bwcg3ow
+2022-11-06 16:27:08,274 INFO    MainThread:16796 [wandb_run.py:_finish():1746] finishing run mk-armah/wsn-intrusion-detection/1bwcg3ow
+2022-11-06 16:27:08,279 INFO    MainThread:16796 [jupyter.py:save_history():448] not saving jupyter history
+2022-11-06 16:27:08,279 INFO    MainThread:16796 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-11-06 16:27:08,279 INFO    MainThread:16796 [wandb_init.py:_jupyter_teardown():408] cleaning up jupyter logic
+2022-11-06 16:27:08,280 INFO    MainThread:16796 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-11-06 16:27:08,281 INFO    MainThread:16796 [wandb_run.py:_restore():1932] restore
+2022-11-06 16:27:08,281 INFO    MainThread:16796 [wandb_run.py:_restore():1938] restore done
+2022-11-06 16:43:25,409 INFO    MainThread:16796 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-11-06 16:43:25,453 INFO    MainThread:16796 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-11-06 16:43:25,540 INFO    MainThread:16796 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-11-06 16:43:25,610 INFO    MainThread:16796 [wandb_init.py:init():569] starting backend
+2022-11-06 16:43:25,611 INFO    MainThread:16796 [wandb_init.py:init():573] setting up manager
+2022-11-06 16:43:25,626 INFO    MainThread:16796 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2022-11-06 16:43:26,649 INFO    MainThread:16796 [wandb_init.py:init():580] backend started and connected
+2022-11-06 16:43:26,995 INFO    MainThread:16796 [wandb_run.py:_label_probe_notebook():1113] probe notebook
+2022-11-06 16:43:27,089 INFO    MainThread:16796 [wandb_run.py:_label_probe_notebook():1123] Unable to probe notebook: 'charmap' codec can't decode byte 0x81 in position 15544617: character maps to <undefined>
+2022-11-06 16:43:27,092 INFO    MainThread:16796 [wandb_init.py:init():658] updated telemetry
+2022-11-06 16:43:27,404 INFO    MainThread:16796 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-11-06 16:43:29,051 INFO    MainThread:16796 [wandb_run.py:_on_init():2000] communicating current version
+2022-11-06 16:43:32,313 INFO    MainThread:16796 [wandb_run.py:_on_init():2004] got version response 
+2022-11-06 16:43:32,314 INFO    MainThread:16796 [wandb_init.py:init():728] starting run threads in backend
+2022-11-06 16:43:37,367 INFO    MainThread:16796 [wandb_run.py:_console_start():1980] atexit reg
+2022-11-06 16:43:37,368 INFO    MainThread:16796 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.WRAP_RAW
+2022-11-06 16:43:37,368 INFO    MainThread:16796 [wandb_run.py:_redirect():1903] Wrapping output streams.
+2022-11-06 16:43:37,369 INFO    MainThread:16796 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-11-06 16:43:37,380 INFO    MainThread:16796 [wandb_init.py:init():765] run started, returning control to user process
+2022-11-06 16:51:26,667 INFO    MainThread:16796 [wandb_run.py:_config_callback():1160] config_cb ('_wandb', 'viz', 'confusion_matrix') {'id': 'wandb/confusion_matrix/v1', 'historyFieldSettings': {'x-axis': '_step', 'key': 'confusion_matrix'}} None
+2022-11-06 16:51:31,885 INFO    MainThread:16796 [wandb_run.py:_config_callback():1160] config_cb ('_wandb', 'viz', 'summary_metrics') {'id': 'wandb/metrics/v1', 'historyFieldSettings': {'x-axis': '_step', 'key': 'summary_metrics'}} None
+2022-11-06 16:51:33,396 INFO    MainThread:16796 [wandb_run.py:_config_callback():1160] config_cb ('_wandb', 'viz', 'class_proportions') {'id': 'wandb/class_proportions/v1', 'historyFieldSettings': {'x-axis': '_step', 'key': 'class_proportions'}} None
+2022-11-06 16:51:37,180 INFO    MainThread:16796 [wandb_run.py:_config_callback():1160] config_cb ('_wandb', 'viz', 'roc') {'id': 'wandb/roc/v1', 'historyFieldSettings': {'x-axis': '_step', 'key': 'roc'}} None
+2022-11-06 16:51:38,526 INFO    MainThread:16796 [wandb_run.py:_config_callback():1160] config_cb ('_wandb', 'viz', 'precision_recall') {'id': 'wandb/pr_curve/v1', 'historyFieldSettings': {'x-axis': '_step', 'key': 'precision_recall'}} None
+2022-11-06 17:09:52,074 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Configure stats pid to 16796
+2022-11-06 17:09:52,094 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Loading settings from C:\Users\mk-armah\.config\wandb\settings
+2022-11-06 17:09:52,094 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Loading settings from D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\settings
+2022-11-06 17:09:52,094 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-11-06 17:09:52,095 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-11-06 17:09:52,095 INFO    MainThread:16796 [wandb_setup.py:_flush():68] Applying login settings: {'force': True}
+2022-11-06 17:09:52,096 INFO    MainThread:16796 [wandb_init.py:_log_setup():476] Logging user logs to D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\run-20221106_170952-z3vurjh9\logs\debug.log
+2022-11-06 17:09:52,096 INFO    MainThread:16796 [wandb_init.py:_log_setup():477] Logging internal logs to D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\run-20221106_170952-z3vurjh9\logs\debug-internal.log
+2022-11-06 17:09:52,098 INFO    MainThread:16796 [wandb_init.py:_jupyter_setup():426] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001C616EDE3A0>
+2022-11-06 17:09:52,141 INFO    MainThread:16796 [wandb_init.py:init():516] calling init triggers
+2022-11-06 17:09:52,141 INFO    MainThread:16796 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-11-06 17:09:52,142 INFO    MainThread:16796 [wandb_init.py:init():535] re-initializing run, found existing run on stack: 1z7it3ab
+2022-11-06 17:09:52,148 INFO    MainThread:16796 [wandb_run.py:_finish():1746] finishing run mk-armah/wsn-intrusion-detection/1z7it3ab
+2022-11-06 17:09:52,150 INFO    MainThread:16796 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-11-06 17:09:52,153 INFO    MainThread:16796 [wandb_run.py:_restore():1932] restore
+2022-11-06 17:09:52,154 INFO    MainThread:16796 [wandb_run.py:_restore():1938] restore done
+2022-11-06 17:10:48,235 INFO    MainThread:16796 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-11-06 17:10:48,236 INFO    MainThread:16796 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-11-06 17:10:48,267 INFO    MainThread:16796 [wandb_run.py:_footer_sync_info():3333] logging synced files

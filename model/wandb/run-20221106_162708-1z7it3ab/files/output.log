@@ -1,0 +1,31 @@
+[34m[1mwandb[39m[22m:
+[34m[1mwandb[39m[22m: Plotting Decision Tree.
+[34m[1mwandb[39m[22m: [33mWARNING[39m could not find any of attributes feature_importances_, feature_log_prob_, coef_ on classifier. Cannot plot feature importances.
+[34m[1mwandb[39m[22m: Logged feature importances.
+[34m[1mwandb[39m[22m: Logged confusion matrix.
+[34m[1mwandb[39m[22m: Logged summary metrics.
+[34m[1mwandb[39m[22m: Logged class proportions.
+[34m[1mwandb[39m[22m: [33mWARNING[39m This function only supports binary classification at the moment and therefore expects labels to be binary. Skipping calibration curve.
+[34m[1mwandb[39m[22m: Logged calibration curve.
+[34m[1mwandb[39m[22m: [33mWARNING[39m wandb.plots.* functions are deprecated and will be removed in a future release. Please use wandb.plot.* instead.
+[34m[1mwandb[39m[22m: Logged roc curve.
+[34m[1mwandb[39m[22m: Logged precision-recall curve.
+Naive Bayes RoC/AuC Score : 0.9704451010459657
+Accuracy (Test set) :  0.9518758486198821
+Accuracy (Train set) :  0.9513924960261823
+Precision :  [0.94495705 0.90057915 0.85309168 0.99871373 0.87669948]
+recall :  [0.98507463 0.98521647 0.95878265 0.98992089 0.93969849]
+fscore :  [0.9645989  0.94099849 0.90285456 0.99429787 0.90710648]
+support :  [ 3015   947  4173 99612  1990]
+Precision :  [0.         0.         0.17560914 0.99705725 0.        ]
+recall :  [0.         0.         1.         0.86054893 0.        ]
+fscore :  [0.         0.         0.2987543  0.92378735 0.        ]
+support :  [ 3015   947  4173 99612  1990]
+Precision :  [0.         0.         0.17560914 0.99705725 0.        ]
+recall :  [0.         0.         1.         0.86054893 0.        ]
+fscore :  [0.         0.         0.2987543  0.92378735 0.        ]
+support :  [ 3015   947  4173 99612  1990]
+Precision :  [0.53280647 0.31414023 0.17310202 0.99178456 0.87623066]
+recall :  [0.9615257  0.8468849  0.54037862 0.87621973 0.31306533]
+fscore :  [0.68566698 0.45828571 0.2622093  0.93042741 0.46131063]
+support :  [ 3015   947  4173 99612  1990]

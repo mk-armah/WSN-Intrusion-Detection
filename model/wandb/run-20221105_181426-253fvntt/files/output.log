@@ -1,0 +1,62 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 374661 entries, 0 to 374660
+Data columns (total 19 columns):
+ #   Column            Non-Null Count   Dtype
+---  ------            --------------   -----
+ 0    id               374661 non-null  int64
+ 1    Time             374661 non-null  int64
+ 2    Is_CH            374661 non-null  int64
+ 3    who CH           374661 non-null  int64
+ 4    Dist_To_CH       374661 non-null  float64
+ 5    ADV_S            374661 non-null  int64
+ 6    ADV_R            374661 non-null  int64
+ 7    JOIN_S           374661 non-null  int64
+ 8    JOIN_R           374661 non-null  int64
+ 9    SCH_S            374661 non-null  int64
+ 10   SCH_R            374661 non-null  int64
+ 11  Rank              374661 non-null  int64
+ 12   DATA_S           374661 non-null  int64
+ 13   DATA_R           374661 non-null  int64
+ 14   Data_Sent_To_BS  374661 non-null  int64
+ 15   dist_CH_To_BS    374661 non-null  float64
+ 16   send_code        374661 non-null  int64
+ 17  Expaned Energy    374661 non-null  float64
+ 18  Attack type       374661 non-null  object
+dtypes: float64(3), int64(15), object(1)
+memory usage: 54.3+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 374661 entries, 0 to 374660
+Data columns (total 19 columns):
+ #   Column           Non-Null Count   Dtype
+---  ------           --------------   -----
+ 0   id               374661 non-null  int64
+ 1   time             374661 non-null  int64
+ 2   is_ch            374661 non-null  int64
+ 3   who_ch           374661 non-null  int64
+ 4   dist_to_ch       374661 non-null  float64
+ 5   adv_s            374661 non-null  int64
+ 6   adv_r            374661 non-null  int64
+ 7   join_s           374661 non-null  int64
+ 8   join_r           374661 non-null  int64
+ 9   sch_s            374661 non-null  int64
+ 10  sch_r            374661 non-null  int64
+ 11  rank             374661 non-null  int64
+ 12  data_s           374661 non-null  int64
+ 13  data_r           374661 non-null  int64
+ 14  data_sent_to_bs  374661 non-null  int64
+ 15  dist_ch_to_bs    374661 non-null  float64
+ 16  send_code_       374661 non-null  int64
+ 17  expaned_energy   374661 non-null  float64
+ 18  attack_type      374661 non-null  object
+dtypes: float64(3), int64(15), object(1)
+memory usage: 54.3+ MB
+total number of duplicated rows:  8873
+percentage duplicated:  2.368
+samples available for training: , 256051
+samples available for testing :  109737
+Object `knn_model` not found.
+Precision :  [0.96929108 0.88       0.77499526 0.99881448 0.44820144]
+recall :  [0.9840796  0.99894403 0.97891205 0.9642011  0.93919598]
+fscore :  [0.97662936 0.93570722 0.86509953 0.98120262 0.60681818]
+support :  [ 3015   947  4173 99612  1990]
+Object `wandb.sklearn.plot_class_proportions #(y_train, y_test, list(y.unique()))` not found.

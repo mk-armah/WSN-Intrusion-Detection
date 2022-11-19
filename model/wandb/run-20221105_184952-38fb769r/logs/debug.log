@@ -1,0 +1,61 @@
+2022-11-05 18:49:52,439 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Configure stats pid to 13332
+2022-11-05 18:49:52,439 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Loading settings from C:\Users\mk-armah\.config\wandb\settings
+2022-11-05 18:49:52,439 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Loading settings from D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\settings
+2022-11-05 18:49:52,440 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-11-05 18:49:52,440 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-11-05 18:49:52,440 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Applying login settings: {'force': True}
+2022-11-05 18:49:52,440 INFO    MainThread:13332 [wandb_init.py:_log_setup():476] Logging user logs to D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\run-20221105_184952-38fb769r\logs\debug.log
+2022-11-05 18:49:52,440 INFO    MainThread:13332 [wandb_init.py:_log_setup():477] Logging internal logs to D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\run-20221105_184952-38fb769r\logs\debug-internal.log
+2022-11-05 18:49:52,441 INFO    MainThread:13332 [wandb_init.py:init():516] calling init triggers
+2022-11-05 18:49:52,441 INFO    MainThread:13332 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-11-05 18:49:52,441 INFO    MainThread:13332 [wandb_init.py:init():535] re-initializing run, found existing run on stack: 253fvntt
+2022-11-05 18:49:52,443 INFO    MainThread:13332 [wandb_run.py:_finish():1746] finishing run mk-armah/wsn-intrusion-detection/253fvntt
+2022-11-05 18:49:52,444 INFO    MainThread:13332 [jupyter.py:save_history():448] not saving jupyter history
+2022-11-05 18:49:52,444 INFO    MainThread:13332 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-11-05 18:49:52,444 INFO    MainThread:13332 [wandb_init.py:_jupyter_teardown():408] cleaning up jupyter logic
+2022-11-05 18:49:52,444 INFO    MainThread:13332 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-11-05 18:49:52,445 INFO    MainThread:13332 [wandb_run.py:_restore():1932] restore
+2022-11-05 18:49:52,446 INFO    MainThread:13332 [wandb_run.py:_restore():1938] restore done
+2022-11-05 18:50:00,457 INFO    MainThread:13332 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-11-05 18:50:00,457 INFO    MainThread:13332 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-11-05 18:50:00,461 INFO    MainThread:13332 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-11-05 18:50:00,466 INFO    MainThread:13332 [wandb_init.py:init():569] starting backend
+2022-11-05 18:50:00,466 INFO    MainThread:13332 [wandb_init.py:init():573] setting up manager
+2022-11-05 18:50:00,471 INFO    MainThread:13332 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2022-11-05 18:50:00,479 INFO    MainThread:13332 [wandb_init.py:init():580] backend started and connected
+2022-11-05 18:50:00,520 INFO    MainThread:13332 [wandb_run.py:_label_probe_notebook():1113] probe notebook
+2022-11-05 18:50:00,583 INFO    MainThread:13332 [wandb_run.py:_label_probe_notebook():1123] Unable to probe notebook: 'charmap' codec can't decode byte 0x81 in position 15539446: character maps to <undefined>
+2022-11-05 18:50:00,585 INFO    MainThread:13332 [wandb_init.py:init():658] updated telemetry
+2022-11-05 18:50:00,755 INFO    MainThread:13332 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-11-05 18:50:02,613 INFO    MainThread:13332 [wandb_run.py:_on_init():2000] communicating current version
+2022-11-05 18:50:03,459 INFO    MainThread:13332 [wandb_run.py:_on_init():2004] got version response upgrade_message: "wandb version 0.13.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-11-05 18:50:03,460 INFO    MainThread:13332 [wandb_init.py:init():728] starting run threads in backend
+2022-11-05 18:50:08,485 INFO    MainThread:13332 [wandb_run.py:_console_start():1980] atexit reg
+2022-11-05 18:50:08,485 INFO    MainThread:13332 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.WRAP_RAW
+2022-11-05 18:50:08,485 INFO    MainThread:13332 [wandb_run.py:_redirect():1903] Wrapping output streams.
+2022-11-05 18:50:08,485 INFO    MainThread:13332 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-11-05 18:50:08,485 INFO    MainThread:13332 [wandb_init.py:init():765] run started, returning control to user process
+2022-11-05 18:50:47,786 INFO    MainThread:13332 [wandb_run.py:_config_callback():1160] config_cb ('_wandb', 'viz', 'feature_importances') {'id': 'wandb/feature_importances/v1', 'historyFieldSettings': {'x-axis': '_step', 'key': 'feature_importances'}} None
+2022-11-05 18:50:55,243 INFO    MainThread:13332 [wandb_run.py:_config_callback():1160] config_cb ('_wandb', 'viz', 'summary_metrics') {'id': 'wandb/metrics/v1', 'historyFieldSettings': {'x-axis': '_step', 'key': 'summary_metrics'}} None
+2022-11-05 18:57:29,385 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Configure stats pid to 13332
+2022-11-05 18:57:29,386 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Loading settings from C:\Users\mk-armah\.config\wandb\settings
+2022-11-05 18:57:29,386 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Loading settings from D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\settings
+2022-11-05 18:57:29,386 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-11-05 18:57:29,386 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-11-05 18:57:29,386 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Applying login settings: {'force': True}
+2022-11-05 18:57:29,386 INFO    MainThread:13332 [wandb_init.py:_log_setup():476] Logging user logs to D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\run-20221105_185729-ugqvz523\logs\debug.log
+2022-11-05 18:57:29,387 INFO    MainThread:13332 [wandb_init.py:_log_setup():477] Logging internal logs to D:\Users\mk-armah\OneDrive\VS-CODE\PYTHON\WSN-Intrusion-Detection\wandb\run-20221105_185729-ugqvz523\logs\debug-internal.log
+2022-11-05 18:57:29,387 INFO    MainThread:13332 [wandb_init.py:_jupyter_setup():426] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001AAAE4B53D0>
+2022-11-05 18:57:29,392 INFO    MainThread:13332 [wandb_init.py:init():516] calling init triggers
+2022-11-05 18:57:29,392 INFO    MainThread:13332 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-11-05 18:57:29,392 INFO    MainThread:13332 [wandb_init.py:init():535] re-initializing run, found existing run on stack: 38fb769r
+2022-11-05 18:57:29,394 INFO    MainThread:13332 [wandb_run.py:_finish():1746] finishing run mk-armah/wsn-intrusion-detection/38fb769r
+2022-11-05 18:57:29,394 INFO    MainThread:13332 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-11-05 18:57:29,395 INFO    MainThread:13332 [wandb_run.py:_restore():1932] restore
+2022-11-05 18:57:29,395 INFO    MainThread:13332 [wandb_run.py:_restore():1938] restore done
+2022-11-05 18:57:36,954 INFO    MainThread:13332 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-11-05 18:57:36,954 INFO    MainThread:13332 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-11-05 18:57:36,957 INFO    MainThread:13332 [wandb_run.py:_footer_sync_info():3333] logging synced files

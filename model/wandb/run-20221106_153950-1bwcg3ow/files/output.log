@@ -1,0 +1,72 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 374661 entries, 0 to 374660
+Data columns (total 19 columns):
+ #   Column            Non-Null Count   Dtype
+---  ------            --------------   -----
+ 0    id               374661 non-null  int64
+ 1    Time             374661 non-null  int64
+ 2    Is_CH            374661 non-null  int64
+ 3    who CH           374661 non-null  int64
+ 4    Dist_To_CH       374661 non-null  float64
+ 5    ADV_S            374661 non-null  int64
+ 6    ADV_R            374661 non-null  int64
+ 7    JOIN_S           374661 non-null  int64
+ 8    JOIN_R           374661 non-null  int64
+ 9    SCH_S            374661 non-null  int64
+ 10   SCH_R            374661 non-null  int64
+ 11  Rank              374661 non-null  int64
+ 12   DATA_S           374661 non-null  int64
+ 13   DATA_R           374661 non-null  int64
+ 14   Data_Sent_To_BS  374661 non-null  int64
+ 15   dist_CH_To_BS    374661 non-null  float64
+ 16   send_code        374661 non-null  int64
+ 17  Expaned Energy    374661 non-null  float64
+ 18  Attack type       374661 non-null  object
+dtypes: float64(3), int64(15), object(1)
+memory usage: 54.3+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 374661 entries, 0 to 374660
+Data columns (total 19 columns):
+ #   Column           Non-Null Count   Dtype
+---  ------           --------------   -----
+ 0   id               374661 non-null  int64
+ 1   time             374661 non-null  int64
+ 2   is_ch            374661 non-null  int64
+ 3   who_ch           374661 non-null  int64
+ 4   dist_to_ch       374661 non-null  float64
+ 5   adv_s            374661 non-null  int64
+ 6   adv_r            374661 non-null  int64
+ 7   join_s           374661 non-null  int64
+ 8   join_r           374661 non-null  int64
+ 9   sch_s            374661 non-null  int64
+ 10  sch_r            374661 non-null  int64
+ 11  rank             374661 non-null  int64
+ 12  data_s           374661 non-null  int64
+ 13  data_r           374661 non-null  int64
+ 14  data_sent_to_bs  374661 non-null  int64
+ 15  dist_ch_to_bs    374661 non-null  float64
+ 16  send_code_       374661 non-null  int64
+ 17  expaned_energy   374661 non-null  float64
+ 18  attack_type      374661 non-null  object
+dtypes: float64(3), int64(15), object(1)
+memory usage: 54.3+ MB
+total number of duplicated rows:  8873
+percentage duplicated: 2.368%
+samples available for training:  256051
+samples available for testing :  109737
+Precision :  [0.95797241 0.89393939 0.77932367 0.99878457 0.56688862]
+recall :  [0.99038143 0.9968321  0.96645099 0.97344697 0.94120603]
+fscore :  [0.97390737 0.94258612 0.86285837 0.98595301 0.7075935 ]
+support :  [ 3015   947  4173 99612  1990]
+Accuracy (Test set) :  0.9876522959439387
+Accuracy (Train set) :  0.9880180120366646
+Accuracy (Test set) :  0.9876522959439387
+Accuracy (Train set) :  0.9880180120366646
+Decision Tree RoC/AuC Score : 0.9930645521105586
+Precision :  [0.94495705 0.90057915 0.85309168 0.99871373 0.87669948]
+recall :  [0.98507463 0.98521647 0.95878265 0.98992089 0.93969849]
+fscore :  [0.9645989  0.94099849 0.90285456 0.99429787 0.90710648]
+support :  [ 3015   947  4173 99612  1990]
+Naive Bayes Accuracy : 0.9518758486198821
+Naive Bayes RoC/AuC Score : 0.9704451010459657
+Decision Tree RoC/AuC Score : 0.9930645521105586

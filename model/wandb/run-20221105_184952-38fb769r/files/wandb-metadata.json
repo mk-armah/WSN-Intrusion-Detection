@@ -1,0 +1,23 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-11-05T18:50:03.493907",
+    "startedAt": "2022-11-05T18:49:52.409886",
+    "docker": null,
+    "gpu": "GeForce GTX 1650 with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "wsnid_notebook.ipynb",
+    "root": "D:/Users/mk-armah/OneDrive/VS-CODE/PYTHON/WSN-Intrusion-Detection",
+    "git": {
+        "remote": "https://github.com/mk-armah/WSN-Instrusion-Detection.git",
+        "commit": "b8dac48748e63a73b31f878aaf0e5fa054cb0d5c"
+    },
+    "email": "mikeyarmah@gmail.com",
+    "host": "mka-msi",
+    "username": "mk-armah",
+    "executable": "D:\\Users\\mk-armah\\miniconda3\\python.exe"
+}

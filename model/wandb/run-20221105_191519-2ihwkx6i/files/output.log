@@ -1,0 +1,78 @@
+
+[34m[1mwandb[39m[22m: [33mWARNING[39m could not find any of attributes feature_importances_, feature_log_prob_, coef_ on classifier. Cannot plot feature importances.
+Object `gscv` not found.
+Precision :  [0.94802296 0.89874638 0.84810662 0.99868296 0.87658376]
+recall :  [0.98606965 0.98416051 0.96069974 0.98959965 0.93869347]
+fscore :  [0.96667209 0.93951613 0.90089888 0.99412055 0.90657607]
+support :  [ 3015   947  4173 99612  1990]
+Accuracy (Test set) :  0.9874335912226505
+Accuracy (Test set) :  0.9877680618314321
+Accuracy (Test set) :  0.9874335912226505
+Accuracy (Training set) :  0.9877680618314321
+Accuracy (Test set) :  0.9874335912226505
+Accuracy (Train set) :  0.9877680618314321
+samples available for training: , 256051
+samples available for testing :  109737
+samples available for training: , 256051
+samples available for testing :  109737
+samples available for training:  256051
+samples available for testing :  109737
+Object `plt.height` not found.
+Object `plt.bar()` not found.
+total number of duplicated rows:  8873
+percentage duplicated: 2.368
+total number of duplicated rows:  8873
+percentage duplicated: 2.368%
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 374661 entries, 0 to 374660
+Data columns (total 19 columns):
+ #   Column            Non-Null Count   Dtype
+---  ------            --------------   -----
+ 0    id               374661 non-null  int64
+ 1    Time             374661 non-null  int64
+ 2    Is_CH            374661 non-null  int64
+ 3    who CH           374661 non-null  int64
+ 4    Dist_To_CH       374661 non-null  float64
+ 5    ADV_S            374661 non-null  int64
+ 6    ADV_R            374661 non-null  int64
+ 7    JOIN_S           374661 non-null  int64
+ 8    JOIN_R           374661 non-null  int64
+ 9    SCH_S            374661 non-null  int64
+ 10   SCH_R            374661 non-null  int64
+ 11  Rank              374661 non-null  int64
+ 12   DATA_S           374661 non-null  int64
+ 13   DATA_R           374661 non-null  int64
+ 14   Data_Sent_To_BS  374661 non-null  int64
+ 15   dist_CH_To_BS    374661 non-null  float64
+ 16   send_code        374661 non-null  int64
+ 17  Expaned Energy    374661 non-null  float64
+ 18  Attack type       374661 non-null  object
+dtypes: float64(3), int64(15), object(1)
+memory usage: 54.3+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 374661 entries, 0 to 374660
+Data columns (total 19 columns):
+ #   Column            Non-Null Count   Dtype
+---  ------            --------------   -----
+ 0    id               374661 non-null  int64
+ 1    Time             374661 non-null  int64
+ 2    Is_CH            374661 non-null  int64
+ 3    who CH           374661 non-null  int64
+ 4    Dist_To_CH       374661 non-null  float64
+ 5    ADV_S            374661 non-null  int64
+ 6    ADV_R            374661 non-null  int64
+ 7    JOIN_S           374661 non-null  int64
+ 8    JOIN_R           374661 non-null  int64
+ 9    SCH_S            374661 non-null  int64
+ 10   SCH_R            374661 non-null  int64
+ 11  Rank              374661 non-null  int64
+ 12   DATA_S           374661 non-null  int64
+ 13   DATA_R           374661 non-null  int64
+ 14   Data_Sent_To_BS  374661 non-null  int64
+ 15   dist_CH_To_BS    374661 non-null  float64
+ 16   send_code        374661 non-null  int64
+ 17  Expaned Energy    374661 non-null  float64
+ 18  Attack type       374661 non-null  object
+dtypes: float64(3), int64(15), object(1)
+memory usage: 54.3+ MB
+Random Forest Accuracy : 0.9960450896233722

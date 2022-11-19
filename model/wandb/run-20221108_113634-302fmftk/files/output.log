@@ -1,0 +1,698 @@
+sklean version : 1.1.3
+imblearn version : 0.9.1
+wandb version : 0.13.4
+pandas : 1.4.4
+numpy : 1.23.3
+seaborn : 0.12.0
+mlxtend : 0.21.0
+xgboost : 1.5.0
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 374661 entries, 0 to 374660
+Data columns (total 19 columns):
+ #   Column            Non-Null Count   Dtype
+---  ------            --------------   -----
+ 0    id               374661 non-null  int64
+ 1    Time             374661 non-null  int64
+ 2    Is_CH            374661 non-null  int64
+ 3    who CH           374661 non-null  int64
+ 4    Dist_To_CH       374661 non-null  float64
+ 5    ADV_S            374661 non-null  int64
+ 6    ADV_R            374661 non-null  int64
+ 7    JOIN_S           374661 non-null  int64
+ 8    JOIN_R           374661 non-null  int64
+ 9    SCH_S            374661 non-null  int64
+ 10   SCH_R            374661 non-null  int64
+ 11  Rank              374661 non-null  int64
+ 12   DATA_S           374661 non-null  int64
+ 13   DATA_R           374661 non-null  int64
+ 14   Data_Sent_To_BS  374661 non-null  int64
+ 15   dist_CH_To_BS    374661 non-null  float64
+ 16   send_code        374661 non-null  int64
+ 17  Expaned Energy    374661 non-null  float64
+ 18  Attack type       374661 non-null  object
+dtypes: float64(3), int64(15), object(1)
+memory usage: 54.3+ MB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 374661 entries, 0 to 374660
+Data columns (total 19 columns):
+ #   Column           Non-Null Count   Dtype
+---  ------           --------------   -----
+ 0   id               374661 non-null  int64
+ 1   time             374661 non-null  int64
+ 2   is_ch            374661 non-null  int64
+ 3   who_ch           374661 non-null  int64
+ 4   dist_to_ch       374661 non-null  float64
+ 5   adv_s            374661 non-null  int64
+ 6   adv_r            374661 non-null  int64
+ 7   join_s           374661 non-null  int64
+ 8   join_r           374661 non-null  int64
+ 9   sch_s            374661 non-null  int64
+ 10  sch_r            374661 non-null  int64
+ 11  rank             374661 non-null  int64
+ 12  data_s           374661 non-null  int64
+ 13  data_r           374661 non-null  int64
+ 14  data_sent_to_bs  374661 non-null  int64
+ 15  dist_ch_to_bs    374661 non-null  float64
+ 16  send_code_       374661 non-null  int64
+ 17  expaned_energy   374661 non-null  float64
+ 18  attack_type      374661 non-null  object
+dtypes: float64(3), int64(15), object(1)
+memory usage: 54.3+ MB
+total number of duplicated rows:  8873
+percentage duplicated: 2.368%
+samples available for training:  256051
+samples available for testing :  109737
+Precision :  [0.95979579 0.9025788  0.84123668 0.99861071 0.52043369]
+recall :  [0.99767828 0.99788807 0.96501318 0.9741497  0.94070352]
+fscore :  [0.97837047 0.94784353 0.89888393 0.98622856 0.67012708]
+support :  [ 3015   947  4173 99612  1990]
+Accuracy (Test set) :  0.9878618879685065
+Accuracy (Train set) :  0.9881195543075403
+Accuracy (Test set) :  0.9878618879685065
+Accuracy (Train set) :  0.9881195543075403
+Decision Tree RoC/AuC Score : 0.993111660139434
+Decision Tree Accuracy
+Accuracy (Test set) :  0.9878618879685065
+Accuracy (Train set) :  0.9881195543075403
+Naive Bayes Accuracy : 0.9518758486198821
+Accuracy (Test set) :  0.9518758486198821
+Accuracy (Train set) :  0.9514042124420525
+Naive Bayes RoC/AuC Score : 0.9705083677860873
+Decision Tree Cross Val Score :  0.986338665834871
+Random Forest Accuracy : 0.9960450896233722
+Random Forest RoC/AuC Score : 0.9965182579976151
+Random Forest Cross Validation Score : 0.9960203231756347
+Accuracy (Test set) :  0.9960450896233722
+Accuracy (Train set) :  0.9999960945280433
+Accuracy (Test set) :  0.9965280625495503
+Accuracy (Train set) :  0.999320447879524
+Accuracy (Test set) :  0.9965280625495503
+Accuracy (Train set) :  0.999320447879524
+[15:47:22] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+  epoch    train_loss    valid_acc    valid_loss      dur
+-------  ------------  -----------  ------------  -------
+      1        [36m3.4879[39m       [32m0.2000[39m        [35m1.6095[39m  18.9290
+      2        [36m1.6096[39m       0.2000        1.6096  16.2680
+      3        1.6096       0.2000        1.6097  16.1530
+      4        [36m1.6096[39m       0.2000        1.6096  16.7980
+      5        1.6096       0.2000        1.6098  16.4360
+      6        1.6096       0.2000        1.6097  16.3430
+      7        1.6096       0.2000        1.6096  16.1460
+      8        1.6096       0.2000        1.6096  16.3390
+      9        1.6096       0.2000        [35m1.6095[39m  16.6120
+     10        1.6096       0.2000        1.6096  16.9550
+     11        1.6096       0.2000        1.6098  16.9790
+     12        1.6096       0.2000        1.6097  17.4740
+     13        1.6096       0.2000        1.6097  17.1800
+     14        1.6096       0.2000        1.6096  17.1840
+     15        1.6096       0.2000        1.6096  17.9285
+     16        1.6096       0.2000        [35m1.6095[39m  17.3240
+     17        1.6096       0.2000        1.6100  16.9200
+     18        1.6096       0.2000        1.6097  16.1330
+     19        1.6096       0.2000        1.6097  15.7370
+     20        1.6096       0.2000        [35m1.6094[39m  15.5250
+     21        1.6096       0.2000        1.6095  15.9470
+     22        [36m1.6096[39m       0.2000        1.6096  15.8920
+     23        1.6096       0.2000        1.6096  16.5230
+     24        1.6096       0.2000        1.6096  16.9990
+     25        1.6096       0.2000        1.6096  16.5820
+     26        1.6096       0.2000        1.6097  16.7270
+     27        1.6096       0.2000        1.6097  16.8800
+     28        1.6096       0.2000        1.6095  17.3180
+     29        1.6096       0.2000        1.6095  16.8950
+     30        1.6096       0.2000        1.6096  17.1940
+  epoch    train_loss    valid_acc    valid_loss      dur
+-------  ------------  -----------  ------------  -------
+      1        [36m1.6109[39m       [32m0.2000[39m        [35m1.6108[39m  21.7380
+      2        [36m1.6105[39m       0.2000        1.6109  18.6416
+      3        1.6106       0.2000        1.6112  17.3199
+      4        [36m1.6105[39m       [32m0.2000[39m        [35m1.6105[39m  17.1090
+      5        [36m1.6105[39m       0.2000        [35m1.6104[39m  17.6240
+      6        1.6106       0.2000        [35m1.6102[39m  18.1870
+      7        1.6106       0.2000        [35m1.6101[39m  17.3930
+      8        [36m1.6105[39m       0.2000        1.6114  17.1220
+      9        1.6105       0.2000        1.6106  18.1726
+     10        [36m1.6105[39m       0.2000        [35m1.6099[39m  17.5800
+     11        1.6105       0.2000        1.6105  18.1670
+     12        1.6106       0.2000        1.6102  18.2767
+     13        1.6105       0.2000        [35m1.6099[39m  19.0910
+     14        1.6106       0.2000        1.6101  19.4440
+     15        1.6106       0.2000        1.6107  18.0676
+     16        1.6105       0.2000        1.6125  17.1400
+     17        1.6105       0.2000        1.6106  17.7350
+     18        1.6105       0.2000        1.6106  16.9220
+     19        1.6105       0.2000        1.6107  17.1207
+     20        1.6106       0.2000        1.6107  16.7390
+     21        1.6106       0.2000        1.6102  17.3010
+     22        1.6105       0.2000        1.6103  17.4106
+     23        1.6106       0.2000        1.6107  17.6590
+     24        1.6105       0.2000        1.6120  18.2060
+     25        1.6106       0.2000        1.6115  18.4342
+     26        1.6106       0.2000        1.6103  17.8470
+     27        1.6106       0.2000        1.6103  18.5960
+     28        1.6105       0.2000        1.6120  19.1690
+     29        1.6106       0.2000        [35m1.6097[39m  19.1946
+     30        1.6106       0.2000        1.6124  18.4000
+Adaboost Classifier Cross Validation Score : 0.9866432724840856
+[18:54:13] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[19:04:13] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[19:06:57] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[19:09:58] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[19:13:14] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[19:16:36] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[19:19:40] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[19:22:41] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[19:25:41] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[19:28:55] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+[19:32:02] WARNING: C:\Windows\Temp\abs_557yfx631l\croots\recipe\xgboost-split_1659548953302\work\src\learner.cc:1115: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'multi:softprob' was changed from 'merror' to 'mlogloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
+Accuracy (Test set) :  0.9971568386232538
+Accuracy (Train set) :  0.9999960945280433
+Encode target labels with value between 0 and n_classes-1.
+    This transformer should be used to encode target values, *i.e.* `y`, and
+    not the input `X`.
+    Read more in the :ref:`User Guide <preprocessing_targets>`.
+    .. versionadded:: 0.12
+    Attributes
+    ----------
+    classes_ : ndarray of shape (n_classes,)
+        Holds the label for each class.
+    See Also
+    --------
+    OrdinalEncoder : Encode categorical features using an ordinal encoding
+        scheme.
+    OneHotEncoder : Encode categorical features as a one-hot numeric array.
+    Examples
+    --------
+    `LabelEncoder` can be used to normalize labels.
+    >>> from sklearn import preprocessing
+    >>> le = preprocessing.LabelEncoder()
+    >>> le.fit([1, 2, 2, 6])
+    LabelEncoder()
+    >>> le.classes_
+    array([1, 2, 6])
+    >>> le.transform([1, 1, 2, 6])
+    array([0, 0, 1, 2]...)
+    >>> le.inverse_transform([0, 0, 1, 2])
+    array([1, 1, 2, 6])
+    It can also be used to transform non-numerical labels (as long as they are
+    hashable and comparable) to numerical labels.
+    >>> le = preprocessing.LabelEncoder()
+    >>> le.fit(["paris", "paris", "tokyo", "amsterdam"])
+    LabelEncoder()
+    >>> list(le.classes_)
+    ['amsterdam', 'paris', 'tokyo']
+    >>> le.transform(["tokyo", "tokyo", "paris"])
+    array([2, 2, 1]...)
+    >>> list(le.inverse_transform([2, 2, 1]))
+    ['tokyo', 'tokyo', 'paris']
+Encode target labels with value between 0 and n_classes-1.
+    This transformer should be used to encode target values, *i.e.* `y`, and
+    not the input `X`.
+    Read more in the :ref:`User Guide <preprocessing_targets>`.
+    .. versionadded:: 0.12
+    Attributes
+    ----------
+    classes_ : ndarray of shape (n_classes,)
+        Holds the label for each class.
+    See Also
+    --------
+    OrdinalEncoder : Encode categorical features using an ordinal encoding
+        scheme.
+    OneHotEncoder : Encode categorical features as a one-hot numeric array.
+    Examples
+    --------
+    `LabelEncoder` can be used to normalize labels.
+    >>> from sklearn import preprocessing
+    >>> le = preprocessing.LabelEncoder()
+    >>> le.fit([1, 2, 2, 6])
+    LabelEncoder()
+    >>> le.classes_
+    array([1, 2, 6])
+    >>> le.transform([1, 1, 2, 6])
+    array([0, 0, 1, 2]...)
+    >>> le.inverse_transform([0, 0, 1, 2])
+    array([1, 1, 2, 6])
+    It can also be used to transform non-numerical labels (as long as they are
+    hashable and comparable) to numerical labels.
+    >>> le = preprocessing.LabelEncoder()
+    >>> le.fit(["paris", "paris", "tokyo", "amsterdam"])
+    LabelEncoder()
+    >>> list(le.classes_)
+    ['amsterdam', 'paris', 'tokyo']
+    >>> le.transform(["tokyo", "tokyo", "paris"])
+    array([2, 2, 1]...)
+    >>> list(le.inverse_transform([2, 2, 1]))
+    ['tokyo', 'tokyo', 'paris']
+Encode target labels with value between 0 and n_classes-1.
+    This transformer should be used to encode target values, *i.e.* `y`, and
+    not the input `X`.
+    Read more in the :ref:`User Guide <preprocessing_targets>`.
+    .. versionadded:: 0.12
+    Attributes
+    ----------
+    classes_ : ndarray of shape (n_classes,)
+        Holds the label for each class.
+    See Also
+    --------
+    OrdinalEncoder : Encode categorical features using an ordinal encoding
+        scheme.
+    OneHotEncoder : Encode categorical features as a one-hot numeric array.
+    Examples
+    --------
+    `LabelEncoder` can be used to normalize labels.
+    >>> from sklearn import preprocessing
+    >>> le = preprocessing.LabelEncoder()
+    >>> le.fit([1, 2, 2, 6])
+    LabelEncoder()
+    >>> le.classes_
+    array([1, 2, 6])
+    >>> le.transform([1, 1, 2, 6])
+    array([0, 0, 1, 2]...)
+    >>> le.inverse_transform([0, 0, 1, 2])
+    array([1, 1, 2, 6])
+    It can also be used to transform non-numerical labels (as long as they are
+    hashable and comparable) to numerical labels.
+    >>> le = preprocessing.LabelEncoder()
+    >>> le.fit(["paris", "paris", "tokyo", "amsterdam"])
+    LabelEncoder()
+    >>> list(le.classes_)
+    ['amsterdam', 'paris', 'tokyo']
+    >>> le.transform(["tokyo", "tokyo", "paris"])
+    array([2, 2, 1]...)
+    >>> list(le.inverse_transform([2, 2, 1]))
+    ['tokyo', 'tokyo', 'paris']
+Help on class LabelEncoder in module sklearn.preprocessing._label:
+class LabelEncoder(sklearn.base.TransformerMixin, sklearn.base.BaseEstimator)
+ |  Encode target labels with value between 0 and n_classes-1.
+ |
+ |  This transformer should be used to encode target values, *i.e.* `y`, and
+ |  not the input `X`.
+ |
+ |  Read more in the :ref:`User Guide <preprocessing_targets>`.
+ |
+ |  .. versionadded:: 0.12
+ |
+ |  Attributes
+ |  ----------
+ |  classes_ : ndarray of shape (n_classes,)
+ |      Holds the label for each class.
+ |
+ |  See Also
+ |  --------
+ |  OrdinalEncoder : Encode categorical features using an ordinal encoding
+ |      scheme.
+ |  OneHotEncoder : Encode categorical features as a one-hot numeric array.
+ |
+ |  Examples
+ |  --------
+ |  `LabelEncoder` can be used to normalize labels.
+ |
+ |  >>> from sklearn import preprocessing
+ |  >>> le = preprocessing.LabelEncoder()
+ |  >>> le.fit([1, 2, 2, 6])
+ |  LabelEncoder()
+ |  >>> le.classes_
+ |  array([1, 2, 6])
+ |  >>> le.transform([1, 1, 2, 6])
+ |  array([0, 0, 1, 2]...)
+ |  >>> le.inverse_transform([0, 0, 1, 2])
+ |  array([1, 1, 2, 6])
+ |
+ |  It can also be used to transform non-numerical labels (as long as they are
+ |  hashable and comparable) to numerical labels.
+ |
+ |  >>> le = preprocessing.LabelEncoder()
+ |  >>> le.fit(["paris", "paris", "tokyo", "amsterdam"])
+ |  LabelEncoder()
+ |  >>> list(le.classes_)
+ |  ['amsterdam', 'paris', 'tokyo']
+ |  >>> le.transform(["tokyo", "tokyo", "paris"])
+ |  array([2, 2, 1]...)
+ |  >>> list(le.inverse_transform([2, 2, 1]))
+ |  ['tokyo', 'tokyo', 'paris']
+ |
+ |  Method resolution order:
+ |      LabelEncoder
+ |      sklearn.base.TransformerMixin
+ |      sklearn.base.BaseEstimator
+ |      builtins.object
+ |
+ |  Methods defined here:
+ |
+ |  fit(self, y)
+ |      Fit label encoder.
+ |
+ |      Parameters
+ |      ----------
+ |      y : array-like of shape (n_samples,)
+ |          Target values.
+ |
+ |      Returns
+ |      -------
+ |      self : returns an instance of self.
+ |          Fitted label encoder.
+ |
+ |  fit_transform(self, y)
+ |      Fit label encoder and return encoded labels.
+ |
+ |      Parameters
+ |      ----------
+ |      y : array-like of shape (n_samples,)
+ |          Target values.
+ |
+ |      Returns
+ |      -------
+ |      y : array-like of shape (n_samples,)
+ |          Encoded labels.
+ |
+ |  inverse_transform(self, y)
+ |      Transform labels back to original encoding.
+ |
+ |      Parameters
+ |      ----------
+ |      y : ndarray of shape (n_samples,)
+ |          Target values.
+ |
+ |      Returns
+ |      -------
+ |      y : ndarray of shape (n_samples,)
+ |          Original encoding.
+ |
+ |  transform(self, y)
+ |      Transform labels to normalized encoding.
+ |
+ |      Parameters
+ |      ----------
+ |      y : array-like of shape (n_samples,)
+ |          Target values.
+ |
+ |      Returns
+ |      -------
+ |      y : array-like of shape (n_samples,)
+ |          Labels as normalized encodings.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from sklearn.base.TransformerMixin:
+ |
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from sklearn.base.BaseEstimator:
+ |
+ |  __getstate__(self)
+ |
+ |  __repr__(self, N_CHAR_MAX=700)
+ |      Return repr(self).
+ |
+ |  __setstate__(self, state)
+ |
+ |  get_params(self, deep=True)
+ |      Get parameters for this estimator.
+ |
+ |      Parameters
+ |      ----------
+ |      deep : bool, default=True
+ |          If True, will return the parameters for this estimator and
+ |          contained subobjects that are estimators.
+ |
+ |      Returns
+ |      -------
+ |      params : dict
+ |          Parameter names mapped to their values.
+ |
+ |  set_params(self, **params)
+ |      Set the parameters of this estimator.
+ |
+ |      The method works on simple estimators as well as on nested objects
+ |      (such as :class:`~sklearn.pipeline.Pipeline`). The latter have
+ |      parameters of the form ``<component>__<parameter>`` so that it's
+ |      possible to update each component of a nested object.
+ |
+ |      Parameters
+ |      ----------
+ |      **params : dict
+ |          Estimator parameters.
+ |
+ |      Returns
+ |      -------
+ |      self : estimator instance
+ |          Estimator instance.
+Re-initializing module.
+Re-initializing module.
+samples available for training:  256051
+samples available for testing :  109737
+Re-initializing module.
+Re-initializing module.
+  epoch    train_loss    valid_acc    valid_loss     dur
+-------  ------------  -----------  ------------  ------
+      1        [36m1.4740[39m       [32m0.9077[39m        [35m0.4248[39m  5.5426
+      2        [36m0.4247[39m       0.9077        [35m0.4247[39m  3.7050
+      3        [36m0.4247[39m       0.9077        0.4247  4.9810
+      4        [36m0.4247[39m       0.9077        0.4247  4.7977
+      5        0.4247       0.9077        [35m0.4247[39m  5.2810
+      6        0.4247       0.9077        0.4247  4.2790
+      7        0.4247       0.9077        0.4247  4.4580
+      8        [36m0.4247[39m       0.9077        0.4247  5.7110
+      9        0.4247       0.9077        [35m0.4247[39m  4.6610
+     10        0.4247       0.9077        0.4247  3.9850
+samples available for training:  179235
+samples available for testing :  76816
+  epoch      train_loss    valid_acc    valid_loss     dur
+-------  --------------  -----------  ------------  ------
+      1  [36m273046122.0083[39m       [32m0.9077[39m        [35m0.4250[39m  3.5496
+      2        [36m0.4249[39m       0.9077        [35m0.4247[39m  3.4690
+      3        0.4250       0.9077        0.4247  3.4590
+      4        0.4250       0.9077        [35m0.4247[39m  3.4690
+      5        [36m0.4249[39m       0.9077        0.4248  3.4300
+      6        0.4249       0.9077        0.4247  4.0110
+      7        0.4249       0.9077        0.4248  4.0250
+      8        0.4250       0.9077        0.4249  4.5250
+      9        0.4250       0.9077        0.4248  4.3560
+     10        0.4249       0.9077        0.4257  4.3340
+     11        0.4249       0.9077        0.4248  3.9970
+     12        0.4249       0.9077        0.4249  4.4150
+     13        [36m0.4249[39m       0.9077        0.4248  4.1110
+     14        0.4249       0.9077        0.4254  4.2170
+     15        0.4249       0.9077        0.4248  5.5200
+     16        [36m0.4249[39m       0.9077        0.4253  5.4100
+     17        0.4249       0.9077        0.4247  4.8490
+     18        0.4249       0.9077        0.4249  4.2330
+     19        0.4249       0.9077        0.4248  4.3060
+     20        0.4249       0.9077        0.4247  4.3960
+  epoch    train_loss    valid_acc    valid_loss     dur
+-------  ------------  -----------  ------------  ------
+      1           nan       [32m0.9077[39m           nan  4.3455
+      2           nan       0.9077           nan  3.6930
+      3           nan       0.9077           nan  3.6900
+      4           nan       0.9077           nan  3.7720
+      5           nan       0.9077           nan  3.3040
+      6           nan       0.9077           nan  4.1700
+      7           nan       0.9077           nan  4.5310
+      8           nan       0.9077           nan  4.0820
+      9           nan       0.9077           nan  4.4540
+     10           nan       0.9077           nan  4.5620
+     11           nan       0.9077           nan  4.1860
+     12           nan       0.9077           nan  4.2960
+     13           nan       0.9077           nan  4.1370
+     14           nan       0.9077           nan  4.3420
+     15           nan       0.9077           nan  4.5670
+     16           nan       0.9077           nan  4.2930
+     17           nan       0.9077           nan  4.3450
+     18           nan       0.9077           nan  4.4320
+     19           nan       0.9077           nan  4.5520
+     20           nan       0.9077           nan  4.1540
+  epoch       train_loss    valid_acc    valid_loss     dur
+-------  ---------------  -----------  ------------  ------
+      1  [36m2043806294.7024[39m       [32m0.9077[39m        [35m0.4248[39m  3.4636
+      2        [36m0.4247[39m       0.9077        [35m0.4247[39m  3.4120
+      3        [36m0.4247[39m       0.9077        0.4247  3.5780
+      4        [36m0.4247[39m       0.9077        [35m0.4247[39m  3.8260
+      5        [36m0.4247[39m       0.9077        [35m0.4247[39m  4.5200
+      6        [36m0.4247[39m       0.9077        0.4247  4.3700
+      7        0.4247       0.9077        0.4247  4.2520
+      8        0.4247       0.9077        0.4248  4.6050
+      9        0.4247       0.9077        0.4247  4.3420
+     10        0.4247       0.9077        [35m0.4247[39m  4.4550
+     11        0.4247       0.9077        0.4247  4.2770
+     12        [36m0.4247[39m       0.9077        0.4247  4.5040
+     13        0.4247       0.9077        0.4247  4.1780
+     14        0.4247       0.9077        0.4247  4.1180
+     15        0.4247       0.9077        0.4247  4.4620
+     16        0.4247       0.9077        0.4247  4.4620
+     17        0.4247       0.9077        0.4247  4.6690
+     18        0.4247       0.9077        0.4247  4.4920
+     19        0.4247       0.9077        0.4247  4.4310
+     20        0.4247       0.9077        0.4248  4.4540
+  epoch    train_loss    valid_acc    valid_loss      dur
+-------  ------------  -----------  ------------  -------
+      1        [36m0.6617[39m       [32m0.9354[39m        [35m0.2409[39m  20.4320
+      2        [36m0.2650[39m       [32m0.9395[39m        [35m0.1853[39m  18.4900
+      3        [36m0.2216[39m       [32m0.9492[39m        [35m0.1655[39m  18.6280
+      4        [36m0.2024[39m       [32m0.9497[39m        [35m0.1560[39m  18.9120
+      5        [36m0.1902[39m       [32m0.9542[39m        [35m0.1437[39m  18.7110
+      6        [36m0.1827[39m       0.9447        0.1615  18.5370
+      7        [36m0.1763[39m       [32m0.9551[39m        [35m0.1359[39m  18.3580
+      8        [36m0.1731[39m       0.9512        0.1721  18.3030
+      9        [36m0.1689[39m       [32m0.9558[39m        [35m0.1319[39m  18.4600
+     10        [36m0.1658[39m       0.9554        0.1361  18.2690
+     11        [36m0.1636[39m       [32m0.9562[39m        0.1351  18.7110
+     12        [36m0.1622[39m       0.9539        0.1410  18.3060
+     13        [36m0.1604[39m       0.9542        0.1371  18.0380
+     14        [36m0.1593[39m       0.9539        0.1353  17.8600
+     15        [36m0.1583[39m       0.9543        0.1407  18.0220
+     16        [36m0.1570[39m       0.9439        0.1516  18.3490
+     17        [36m0.1559[39m       0.9195        0.2243  18.1170
+     18        [36m0.1543[39m       0.9508        0.1456  18.1630
+     19        [36m0.1532[39m       0.9552        0.1393  18.9670
+     20        [36m0.1528[39m       0.9554        0.1404  18.2250
+     21        [36m0.1519[39m       0.9444        0.1582  18.3100
+     22        [36m0.1511[39m       0.9550        [35m0.1312[39m  18.5440
+     23        [36m0.1498[39m       0.9497        0.1389  19.0660
+     24        [36m0.1492[39m       [32m0.9574[39m        0.1331  18.1940
+     25        [36m0.1482[39m       0.9549        0.1339  18.2800
+     26        [36m0.1475[39m       0.9554        [35m0.1288[39m  18.8870
+     27        [36m0.1468[39m       0.9572        0.1313  18.8020
+     28        [36m0.1460[39m       [32m0.9574[39m        [35m0.1218[39m  18.5660
+     29        [36m0.1456[39m       [32m0.9583[39m        0.1260  18.5620
+     30        [36m0.1449[39m       0.9583        0.1244  18.7690
+  epoch    train_loss    valid_acc    valid_loss      dur
+-------  ------------  -----------  ------------  -------
+      1        [36m0.8876[39m       [32m0.7800[39m        [35m0.5304[39m  21.1870
+      2        [36m0.4519[39m       [32m0.9255[39m        [35m0.2757[39m  19.7080
+      3        [36m0.3036[39m       0.8879        0.2931  20.1160
+      4        [36m0.2738[39m       [32m0.9376[39m        [35m0.2070[39m  19.2970
+      5        [36m0.2585[39m       [32m0.9406[39m        [35m0.1910[39m  20.0430
+      6        [36m0.2511[39m       [32m0.9441[39m        [35m0.1875[39m  20.1010
+      7        [36m0.2433[39m       0.8096        0.7344  19.7740
+      8        [36m0.2346[39m       0.9430        [35m0.1756[39m  19.6010
+      9        [36m0.2292[39m       0.9402        [35m0.1739[39m  21.0660
+     10        [36m0.2230[39m       0.9423        0.1869  20.4520
+     11        [36m0.2225[39m       0.9430        [35m0.1739[39m  19.8610
+     12        [36m0.2166[39m       [32m0.9466[39m        [35m0.1599[39m  20.7090
+     13        [36m0.2164[39m       0.9274        0.1820  22.1990
+     14        [36m0.2134[39m       0.9432        0.1621  20.9250
+     15        [36m0.2117[39m       [32m0.9525[39m        0.1677  19.5410
+     16        0.2124       [32m0.9536[39m        [35m0.1584[39m  19.8100
+     17        [36m0.2096[39m       0.9422        0.1745  19.5020
+     18        [36m0.2083[39m       0.9409        0.2288  20.9200
+     19        0.2086       0.9274        0.1965  20.3000
+     20        [36m0.2059[39m       0.9435        0.1619  22.3722
+     21        [36m0.2043[39m       0.9446        [35m0.1570[39m  24.2000
+     22        0.2049       0.9390        0.1666  21.0400
+     23        [36m0.2019[39m       0.9528        [35m0.1549[39m  20.5440
+     24        [36m0.2007[39m       0.9531        [35m0.1507[39m  20.0970
+     25        [36m0.1965[39m       0.9518        0.1545  20.0750
+     26        [36m0.1887[39m       0.9530        0.1553  19.3220
+     27        [36m0.1865[39m       0.9449        0.1519  20.0280
+     28        [36m0.1847[39m       [32m0.9542[39m        0.1867  21.0820
+     29        0.1858       0.9446        0.1565  20.5590
+     30        [36m0.1832[39m       0.9539        [35m0.1449[39m  20.3670
+  epoch    train_loss    valid_acc    valid_loss      dur
+-------  ------------  -----------  ------------  -------
+      1        [36m1.1875[39m       [32m0.9228[39m        [35m0.9907[39m  21.2590
+      2        [36m1.0166[39m       [32m0.9404[39m        [35m0.9725[39m  19.5140
+      3        [36m0.9969[39m       [32m0.9425[39m        [35m0.9650[39m  19.6210
+      4        [36m0.9872[39m       [32m0.9427[39m        [35m0.9619[39m  21.9300
+      5        [36m0.9816[39m       [32m0.9460[39m        [35m0.9597[39m  21.0465
+      6        [36m0.9788[39m       [32m0.9507[39m        [35m0.9553[39m  22.8420
+      7        [36m0.9767[39m       0.9499        0.9572  19.5780
+      8        [36m0.9753[39m       [32m0.9523[39m        [35m0.9536[39m  18.9900
+      9        [36m0.9739[39m       0.9520        0.9541  18.8840
+     10        [36m0.9736[39m       [32m0.9523[39m        [35m0.9533[39m  22.3709
+     11        [36m0.9732[39m       [32m0.9524[39m        [35m0.9529[39m  26.4367
+     12        [36m0.9722[39m       [32m0.9528[39m        [35m0.9526[39m  23.0470
+     13        [36m0.9715[39m       0.9522        0.9532  21.5718
+     14        [36m0.9710[39m       0.9517        0.9534  22.8472
+     15        [36m0.9704[39m       [32m0.9534[39m        [35m0.9522[39m  30.9354
+     16        [36m0.9700[39m       0.9529        0.9542  22.6286
+     17        0.9700       0.9524        0.9532  19.7662
+     18        [36m0.9692[39m       0.9533        [35m0.9517[39m  24.4814
+     19        0.9698       0.9512        0.9547  23.7029
+     20        [36m0.9690[39m       0.9524        0.9524  24.2225
+     21        0.9691       0.9509        0.9541  21.7450
+     22        [36m0.9687[39m       0.9528        0.9523  21.5653
+     23        [36m0.9679[39m       0.9533        [35m0.9516[39m  20.8814
+     24        [36m0.9674[39m       0.9531        0.9518  22.2460
+     25        [36m0.9673[39m       [32m0.9534[39m        0.9516  23.4462
+     26        [36m0.9665[39m       0.9527        0.9518  20.5300
+     27        0.9667       0.9526        0.9519  20.5180
+     28        [36m0.9664[39m       0.9137        0.9896  21.6510
+     29        0.9671       0.9534        0.9517  21.6986
+     30        [36m0.9659[39m       0.9303        0.9761  23.1213
+Accuracy (Test set) :  0.9574801571028915
+Accuracy (Test set) :  0.9574801571028915
+Accuracy (Train set) :  0.9570398084756553
+  epoch    train_loss    valid_acc    valid_loss      dur
+-------  ------------  -----------  ------------  -------
+      1        [36m1.2535[39m       [32m0.7734[39m        [35m1.1438[39m  16.9893
+      2        [36m1.0797[39m       [32m0.9230[39m        [35m0.9894[39m  16.2889
+      3        [36m1.0030[39m       [32m0.9312[39m        [35m0.9763[39m  18.8130
+      4        [36m0.9828[39m       [32m0.9376[39m        [35m0.9685[39m  17.9225
+      5        [36m0.9753[39m       [32m0.9393[39m        [35m0.9664[39m  17.7149
+      6        [36m0.9711[39m       [32m0.9423[39m        [35m0.9627[39m  18.0909
+      7        [36m0.9682[39m       0.9418        0.9629  17.9795
+      8        [36m0.9661[39m       0.9421        [35m0.9625[39m  17.8607
+      9        [36m0.9643[39m       [32m0.9480[39m        [35m0.9573[39m  21.5870
+     10        [36m0.9622[39m       [32m0.9510[39m        [35m0.9566[39m  21.8009
+     11        [36m0.9610[39m       0.7903        1.1126  17.7201
+     12        [36m0.9599[39m       0.9188        0.9850  17.4117
+     13        [36m0.9587[39m       [32m0.9518[39m        [35m0.9543[39m  17.3900
+     14        [36m0.9573[39m       0.9496        0.9555  17.6188
+     15        [36m0.9568[39m       [32m0.9519[39m        [35m0.9539[39m  17.3421
+     16        [36m0.9564[39m       0.9490        0.9563  17.8970
+     17        [36m0.9559[39m       [32m0.9521[39m        [35m0.9529[39m  19.6050
+     18        [36m0.9553[39m       0.9519        [35m0.9528[39m  23.1421
+     19        [36m0.9553[39m       0.9064        0.9998  19.9079
+     20        [36m0.9548[39m       0.9519        0.9541  19.9324
+     21        0.9549       [32m0.9524[39m        [35m0.9528[39m  19.4951
+     22        [36m0.9541[39m       0.9520        0.9532  19.1964
+     23        [36m0.9540[39m       0.9521        0.9534  20.4068
+     24        0.9542       0.9522        0.9532  19.0730
+     25        [36m0.9540[39m       0.9522        0.9535  18.7959
+     26        [36m0.9537[39m       [32m0.9527[39m        [35m0.9518[39m  17.5926
+     27        [36m0.9532[39m       0.9512        0.9531  17.6591
+     28        [36m0.9531[39m       [32m0.9533[39m        [35m0.9518[39m  17.8880
+     29        [36m0.9530[39m       0.9526        0.9522  18.1026
+     30        0.9532       0.9520        0.9532  17.2949
+  epoch    train_loss    valid_acc    valid_loss      dur
+-------  ------------  -----------  ------------  -------
+      1        [36m1.1888[39m       [32m0.8957[39m        [35m1.0347[39m  18.2360
+      2        [36m1.0202[39m       [32m0.9330[39m        [35m0.9760[39m  16.9171
+      3        [36m1.0016[39m       [32m0.9369[39m        [35m0.9699[39m  17.8129
+      4        [36m0.9950[39m       [32m0.9380[39m        [35m0.9679[39m  18.1131
+      5        [36m0.9912[39m       0.9348        0.9717  18.1135
+Something is Printing
+Something is Printing
+Something is Printing
+Something is Printing
+Something is Printing
+Something is Printing
+Something is Printing
+Something is Printing
+Something is Printing
+Something is Printing
+detectionspeed_naive_bayes
+naive_bayes
+naive_bayes
+['naive', 'bayes']
+<generator object <genexpr> at 0x00000182AB0EF2E0>
+['naive', 'bayes']
+['naive ', 'bayes ']
+naive bayes
+naive bayes
+Hello
+KNN Accuracy
+Accuracy (Test set) :  0.9842988235508534
+
+Accuracy (Train set) :  0.9925132102588937
+Stacking Classifier RoC/AuC Score : 0.9933443415500112
+Adaboost Classifier RoC/AuC Score : 0.9705083677860873
+Adaboost Classifier RoC/AuC Score : 0.9705083677860873
+Adaboost Classifier RoC/AuC Score : 0.9958239819288448
+Stacking Classifier RoC/AuC Score : 0.9933443415500112
+Stacking Classifier RoC/AuC Score : 0.9933443415500112
+Accuracy (Test set) :  0.9574801571028915

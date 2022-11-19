@@ -1,0 +1,1 @@
+{"columns": ["class", "dataset", "count"], "data": [["Blackhole", "train", 7034], ["Blackhole", "test", 3015], ["Flooding", "train", 2210], ["Flooding", "test", 947], ["Grayhole", "train", 9736], ["Grayhole", "test", 4173], ["Normal", "train", 232428], ["Normal", "test", 99612], ["TDMA", "train", 4643], ["TDMA", "test", 1990]]}

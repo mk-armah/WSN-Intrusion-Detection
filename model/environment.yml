@@ -1,0 +1,17 @@
+name: base
+channels:
+  - defaults
+dependencies:
+  - conda
+  - python=3.9
+  - menuinst
+  - console_shortcut
+  - powershell_shortcut
+  - conda-build
+  - jupyter
+  - seaborn
+  - matplotlib
+  - pandas
+  - mlxtend
+  - py-xgboost-cpu
+prefix: D:\Users\mk-armah\miniconda3
