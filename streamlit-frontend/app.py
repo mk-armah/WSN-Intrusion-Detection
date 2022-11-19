@@ -8,7 +8,6 @@ st.title("WSN Intrusion Detection")
 
 import time
 
-
 model = st.sidebar.selectbox(
         "Select Classifier:", ['Adaboost',"Random Forest", "Decision Tree", "Artificial Neural Network"], index=1
     )
@@ -42,30 +41,9 @@ st.sidebar.write(
     f"Engineered By: Chael.AI"
 )
 
-
-
-
-
-
-
-
 st.image('https://psiborg.in/wp-content/uploads/2021/07/Embedded-banner-2048_11zon-1.jpg')
 form = st.form(key="annotation")
 
-# cols = st.columns(4)
-# cols[0].download_button(
-#     label="Download Model",
-#     data="csv",
-#     file_name='large_df.csv',
-#     mime='text/csv',
-# )
-
-# cols[3].download_button(
-#     label="Download Data",
-#     data="csv",
-#     file_name='dataset.csv',
-#     mime='text/csv',
-# )
 
 with form:
     cols = st.columns((1, 1))
@@ -73,7 +51,6 @@ with form:
     is_channel = cols[1].selectbox(
         "is channel:", [0,1], index=1
     )
-
 
     cols = st.columns(3)
     adv_s = cols[0].number_input("adv_s") 
@@ -99,8 +76,6 @@ with form:
     
     submitted = st.form_submit_button(label="Predict")
 
-
-
 if submitted:
     with st.spinner(text='In progress'):
         import time
@@ -111,14 +86,8 @@ if submitted:
 
         # st.snow()
         st.warning('Warning message')
-    
-
-
-
 
 expander = st.expander("Give your comments")
 
 with expander:
      comment = st.text_area("Comment:")
-#     #st.write(f"Open original [Google Sheet]({GSHEET_URL})")
-#     #st.dataframe()
