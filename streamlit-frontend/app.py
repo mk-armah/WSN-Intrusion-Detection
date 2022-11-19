@@ -1,48 +1,124 @@
 import pandas as pd
 import streamlit as st
-import os
-from dotenv import load_dotenv
-
-load_dotenv(".env")
-ACCESS_KEY_ID = os.environ.get("ACCESS_KEY_ID")
-SECRET_ACCESS_KEY = os.environ.get("SECRET_ACCESS_KEY")
 
 
 st.set_page_config(page_title="WSN ID", page_icon=":}", layout="centered")
 
 st.title("WSN Intrusion Detection")
 
+import time
 
-st.sidebar.write(
-    f"This app shows how a Streamlit app can interact easily with a [Google Sheet] to read or store data."
+
+model = st.sidebar.selectbox(
+        "Select Classifier:", ['Adaboost',"Random Forest", "Decision Tree", "Artificial Neural Network"], index=1
+    )
+
+cols = st.sidebar.columns(2)
+cols[0].download_button(
+    label="Download Model",
+    data="csv",
+    file_name='large_df.csv',
+    mime='text/csv',
 )
 
-st.sidebar.write(
-    f"[Read more](https://docs.streamlit.io/knowledge-base/tutorials/databases/public-gsheet) about connecting your Streamlit app to Google Sheets."
+cols[1].download_button(
+    label="Download Data",
+    data="csv",
+    file_name='dataset.csv',
+    mime='text/csv',
 )
 
+#Read me
+
+# with open("README.text",'r') as file:
+#     readme = file.read()
+
+# st.sidebar.write(readme)
+
+st.sidebar.write(
+    f"[Github Repository](https://github.com/mk-armah/WSN-Intrusion-Detection)"
+)
+st.sidebar.write(
+    f"Engineered By: Chael.AI"
+)
+
+
+
+
+
+
+
+
+st.image('https://psiborg.in/wp-content/uploads/2021/07/Embedded-banner-2048_11zon-1.jpg')
 form = st.form(key="annotation")
+
+# cols = st.columns(4)
+# cols[0].download_button(
+#     label="Download Model",
+#     data="csv",
+#     file_name='large_df.csv',
+#     mime='text/csv',
+# )
+
+# cols[3].download_button(
+#     label="Download Data",
+#     data="csv",
+#     file_name='dataset.csv',
+#     mime='text/csv',
+# )
 
 with form:
     cols = st.columns((1, 1))
-    author = cols[0].text_input("Report author:")
-    bug_type = cols[1].selectbox(
-        "Bug type:", ["Front-end", "Back-end", "Data related", "404"], index=2
+    dist_to_ch = cols[0].number_input("dist_to_ch")
+    is_channel = cols[1].selectbox(
+        "is channel:", [0,1], index=1
     )
 
-    comment = st.text_area("Comment:")
+
+    cols = st.columns(3)
+    adv_s = cols[0].number_input("adv_s") 
+    adv_r = cols[1].number_input("adv_r")
+    expaned_energy = cols[2].number_input("expaned_energy")
+
+
+    cols = st.columns(3)
+    sch_s = cols[0].number_input("sch_s") 
+    sch_r = cols[1].selectbox(
+        "sch_r:", [0,1], index=1
+    )
+    send_code = cols[2].slider("send_code",0, 15,1)
+
     cols = st.columns(2)
-    date = cols[0].date_input("Bug date occurrence:")
-    bug_severity = cols[1].slider("Bug severity:", 0, 1)
-    submitted = st.form_submit_button(label="Submit")
+    data_sent_to_bs = cols[0].number_input("data_sent_to_bs") 
+    dist_ch_to_bs = cols[1].number_input("dist_ch_to_bs")
+
+    cols = st.columns(2)
+    data_s = cols[0].number_input("data_s") 
+    data_r = cols[1].number_input("data_r")
+
+    
+    submitted = st.form_submit_button(label="Predict")
+
 
 
 if submitted:
+    with st.spinner(text='In progress'):
+        import time
+        time.sleep(5)
+        st.success("{} Attack Detected".format("predictions")) #predictions goes
+        st.balloons() 
+        st.info("Don't forget to leave a comment below if you like this work :)")
 
-    st.success("Predictions {}") #predictions goes
-    st.balloons() 
+        # st.snow()
+        st.warning('Warning message')
+    
 
-expander = st.expander("See all records")
+
+
+
+expander = st.expander("Give your comments")
+
 with expander:
-    st.write(f"Open original [Google Sheet]({GSHEET_URL})")
-    st.dataframe(get_data(gsheet_connector))
+     comment = st.text_area("Comment:")
+#     #st.write(f"Open original [Google Sheet]({GSHEET_URL})")
+#     #st.dataframe()
