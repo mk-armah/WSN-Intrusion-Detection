@@ -31,7 +31,7 @@ class AWS:
             format='%(asctime)s >> %(levelname)s >> %(message)s'
         )
 
-    def getObject(self,bucket_name):
+    def getObject(self,path_to_object):
         """Create an S3 bucket in  S3 default region (us-east-1).
         Args:
             param bucket_name: Bucket to create
@@ -41,8 +41,7 @@ class AWS:
         """
         # Create bucket
         try:
-            self.bucket.download_file("models/adaboost.chael",Filename = "./")
-        
+            self.bucket.download_file(path_to_object,Filename = "./")
         except ClientError as e:
             self.logging.error(e)
             print("Action Failed : Please refer to logs at aws-config.log")
@@ -81,7 +80,8 @@ if __name__ == "__main__":
 
     ACCESS_KEY_ID = os.environ.get("ACCESS_KEY_ID")
     SECRET_ACCESS_KEY = os.environ.get("SECRET_ACCESS_KEY")
-    s3client = AWS(ACCESS_KEY_ID,SECRET_ACCESS_KEY,"wsn-intrusion-detection")
+    s3 = AWS(ACCESS_KEY_ID,SECRET_ACCESS_KEY,"wsn-intrusion-detection")
     print(ACCESS_KEY_ID)
     print(SECRET_ACCESS_KEY)
+    s3.getObject("models/adaboost.chael")
     
