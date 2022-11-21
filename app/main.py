@@ -1,7 +1,10 @@
+"""This script serves as a server to a streamlit frontend
+
+Author : Ing. Michael Kofi Armah
+Last Update Date : 21-11-22"""
 from fastapi import FastAPI
-from model import Features,Model
+from schema import Features,ModelName
 import joblib 
-from utils import load_model
 from aws import AWS
 import os
 import numpy as np
@@ -9,7 +12,7 @@ import numpy as np
 app  = FastAPI()
 
 
-@app.post("/{model}/predict")
+@app.post("/{model_name}/predict")
 def predictions( is_ch: int, dist_to_ch: int|float,
                 adv_s: int, adv_r: int,
                 join_s: int, join_r: int,
@@ -17,7 +20,7 @@ def predictions( is_ch: int, dist_to_ch: int|float,
                 rank: int, data_s: int,
                 data_r: int, data_sent_to_bs:int,
                 dist_ch_to_bs:int|float,send_code: int,
-                expaned_energy:int|float, model:Model):
+                expaned_energy:int|float, model_name:ModelName):
                 
         
             features = [
@@ -30,7 +33,7 @@ def predictions( is_ch: int, dist_to_ch: int|float,
             #load model
 
             try:
-                modelpath = "./models/"+model.value+".chael"
+                modelpath = "./models/"+model_name.value+".chael"
                 model = joblib.load(modelpath)
 
             except Exception as exc:

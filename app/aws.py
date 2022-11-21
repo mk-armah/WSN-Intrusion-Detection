@@ -1,3 +1,9 @@
+"""This script will be automated to run once daily
+Purpose: Downloads the latest version of trained model from AWS S3 on daily basis
+
+Author : Ing. Michael Kofi Armah
+Last Update Date : 21-11-22"""
+
 import logging
 import boto3
 from botocore.exceptions import ClientError, EndpointConnectionError
@@ -81,7 +87,8 @@ if __name__ == "__main__":
     ACCESS_KEY_ID = os.environ.get("ACCESS_KEY_ID")
     SECRET_ACCESS_KEY = os.environ.get("SECRET_ACCESS_KEY")
     s3 = AWS(ACCESS_KEY_ID,SECRET_ACCESS_KEY,"wsn-intrusion-detection")
-    print(ACCESS_KEY_ID)
-    print(SECRET_ACCESS_KEY)
-    s3.getObject("models/adaboost.chael")
     
+    try:
+        s3.getObject("models/adaboost.chael")
+    except Exception as exc:
+        print('could not get adaboost model')
