@@ -103,8 +103,8 @@ if submitted:
                     st.info("Hello {}, your comments on this work has been recieved, out team will contact you via email as soon as possible, Thanks :) ")
                     st.write(name)
 
-[is_channel, dist_to_ch,adv_s,adv_r,join_s,join_r,
-sch_s,sch_r,rank,data_s,data_r,data_sent_to_bs,
-dist_ch_to_bs,send_code,expaned_energy]        
+# [is_channel, dist_to_ch,adv_s,adv_r,join_s,join_r,
+# sch_s,sch_r,rank,data_s,data_r,data_sent_to_bs,
+# dist_ch_to_bs,send_code,expaned_energy]        
 
         
