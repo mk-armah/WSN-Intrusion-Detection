@@ -8,8 +8,41 @@ import joblib
 from aws import AWS
 import os
 import numpy as np
+from fastapi.staticfiles import StaticFiles
+from starlette.templating import Jinja2Templates
+from fastapi import Request
+
 
 app  = FastAPI()
+
+templates = Jinja2Templates(directory="./templates")
+
+
+
+app.mount(
+    "/templates/js",
+    StaticFiles(
+        directory="templates/js"),
+    name="js")
+
+app.mount(
+    "/templates/css",
+    StaticFiles(
+        directory="templates/css"),
+    name="css")
+
+app.mount(
+    "/templates/scss",
+    StaticFiles(
+        directory="templates/scss"),
+    name="scss")
+
+
+@app.get("/")
+async def home(request:Request):
+    return templates.TemplateResponse(
+        "index.html",context= {"request":request})
+
 
 
 @app.post("/{model_name}/predict")
@@ -46,6 +79,7 @@ def predictions( is_ch: int, dist_to_ch: int|float,
 
 
 
+# --- ---- ---- more functionalities --- --- --- -- 
 @app.get("/{}/download")
 def getmodel():
     """download/send model to user"""
