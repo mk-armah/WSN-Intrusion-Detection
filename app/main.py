@@ -61,7 +61,7 @@ def predictions( is_ch: int, dist_to_ch: int|float,
                         adv_r,join_s,join_r,sch_s,sch_r,                
                         rank,data_s,data_r,data_sent_to_bs,     
                         dist_ch_to_bs,send_code,expaned_energy 
-                        ]
+                    ]
             
             #load model
 
