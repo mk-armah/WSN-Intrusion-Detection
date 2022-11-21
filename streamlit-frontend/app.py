@@ -57,7 +57,6 @@ with form:
     adv_r = cols[1].number_input("adv_r")
     expaned_energy = cols[2].number_input("expaned_energy")
 
-
     cols = st.columns(3)
     sch_s = cols[0].number_input("sch_s") 
     sch_r = cols[1].selectbox(
@@ -72,22 +71,40 @@ with form:
     cols = st.columns(2)
     data_s = cols[0].number_input("data_s") 
     data_r = cols[1].number_input("data_r")
-
     
+    cols = st.columns(3)
+    join_s = cols[0].number_input("join_s") 
+    join_r = cols[1].number_input("join_r")
+    rank = cols[2].number_input("rank")
+
     submitted = st.form_submit_button(label="Predict")
 
 if submitted:
     with st.spinner(text='In progress'):
         import time
-        time.sleep(5)
+        time.sleep(2)
+        st.write(data_r)
         st.success("{} Attack Detected".format("predictions")) #predictions goes
         st.balloons() 
         st.info("Don't forget to leave a comment below if you like this work :)")
 
-        # st.snow()
-        st.warning('Warning message')
+        expander = st.expander("Leave us a comment")
+        with expander:
+            comment_form = st.form(key="comments")
+            with comment_form:
+                cols = st.columns((2))
+                name = cols[0].text_input("name")
+                email = cols[1].text_input("email address")
+                comment = st.text_area("Comment:")
 
-expander = st.expander("Give your comments")
+                submit_comment = st.form_submit_button(label="Submit")
 
-with expander:
-     comment = st.text_area("Comment:")
+                if submit_comment:
+                    st.info("Hello {}, your comments on this work has been recieved, out team will contact you via email as soon as possible, Thanks :) ")
+                    st.write(name)
+
+[is_channel, dist_to_ch,adv_s,adv_r,join_s,join_r,
+sch_s,sch_r,rank,data_s,data_r,data_sent_to_bs,
+dist_ch_to_bs,send_code,expaned_energy]        
+
+        
