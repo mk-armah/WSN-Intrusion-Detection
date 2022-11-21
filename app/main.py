@@ -45,7 +45,7 @@ async def home(request:Request):
 
 
 
-@app.post("/{model_name}/predict")
+@app.get("/{model_name}/predict")
 def predictions( is_ch: int, dist_to_ch: int|float,
                 adv_s: int, adv_r: int,
                 join_s: int, join_r: int,
