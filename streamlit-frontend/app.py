@@ -19,8 +19,6 @@ hide_menu = """<style>#MainMenu {
     }
 }</style>"""
 
-[theme]
-base="dark"
 
 def main():
 
