@@ -12,7 +12,7 @@ hide_menu = """<style>#MainMenu {
 
     footer:after{
         visibility: visible;
-        content = 'copyright chael.ai';
+        content = 'copyright@chael.ai';
         display:block
         position:relative;
         color:tomato;
@@ -21,9 +21,14 @@ hide_menu = """<style>#MainMenu {
 
 
 def main():
+    
+    menu_items = {"Get help":"mailto:mikeyarmah@gmail.com","About":"http://wsn-api.herokuapp.com",
+                  "Report a bug": "https://github.com/mk-armah/WSN-Intrusion-Detection/issues"}
 
-    st.set_page_config(page_title="WSN ID", page_icon=":}", layout="centered")
+    st.set_page_config(page_title="WSN ID", page_icon=":}", layout="wide",
+                       initial_sidebar_state="auto", menu_items=menu_items) 
     st.title("WSN Intrusion Detection")
+    
 
     #hide menu bar
     st.markdown(hide_menu,unsafe_allow_html = True)
@@ -47,8 +52,8 @@ def main():
 
         cols[1].download_button(
         label="Source Code",
-        data="csv",
-        file_name='source.code',
+        data="tar",
+        file_name='source.tar',
         mime='text/csv',
     )
 
