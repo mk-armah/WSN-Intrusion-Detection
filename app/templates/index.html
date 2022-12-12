@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Intrusion Detection In Wireless Sensor Networks</title>
+    <meta name="description" content="WSN Intrusion Detection."/>
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=K2D:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href = "{{url_for('css',path = 'bootstrap.css')}}"/>
+</head>
+<body>
+
+<!--Header Section-->
+<section class="bg-gradient pt-5 pb-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex flex-row align-items-center justify-content-between">
+                
+                <div class="heading-brand">Chael.AI</div>
+                
+                <a href="https://mk-armah-wsn-intrusion-detection-streamlit-frontendapp-f-cjuad8.streamlit.app/" class="btn btn-dark" target="_blank">Try it Out >></a>
+                
+            </div>
+            
+        </div>
+        <div class="row mt-6">
+            <div class="col-md-8 mx-auto text-center">
+                <h1>Intrusion Detection In Wireless Sensor Networks</h1>
+                <p class="lead mb-5">Before you will think we have thought. </p>
+                <a href="https://github.com/mk-armah" class="btn btn-success svg-icon">
+                    <em class="mr-2" data-feather="github"></em>
+                    Contribute
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-9 mx-auto">
+                <div class="code-window">
+                    <div class="dots">
+                        <div class="red"></div>
+                        <div class="orange"></div>
+                        <div class="green"></div>
+                    </div>
+                    <pre class="language-javascript line-numbers"><code class="language-javascript">
+def Calc_Detection_Speed(func):
+"""decorator function"""
+    def wrap():
+        times = []
+        for i in range(100):
+            start_time = time.time()
+            func().predict(X_test.values.astype(np.float32)) #score the testing data
+            times.append(time.time() - start_time)
+        avg_inf_time = np.mean(times)
+        
+        pattern= "ds_(.*)"
+        match = re.search(pattern,func.__name__)
+
+        if match:
+            content = match.group(1)
+            algorithm = re.sub('_'," ",content)
+            formatted_results = algorithm+" Classifier has an average speed of : {}s".format(round(avg_inf_time,3))
+        else:
+            print("Unrecognized Algorithm naming convention")
+            
+        return formatted_results
+    
+    return wrap
+</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Features Section-->
+<section class="py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="text-center text-md-left">Support this project <span class="text-success">chael.ai</span></h2>
+</section>
+
+<!--Used By Section-->
+<section class="pb-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="text-center text-md-left">Connect with Developer on <a href = "https://www.linkedin.com/in/michael-armah-1b95571b3/"><img src="https://logo.clearbit.com/linkedin.com?size=30" alt="Stripe"/></a></h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="">Developer</a></li>
+                    <li class="list-inline-item"><a href="https://github.com/mk-armah/WSN-Intrusion-Detection/blob/model/model/README.md">API Docs</a></li>
+                    <li class="list-inline-item"><a href="https://github.com/mk-armah/WSN-Intrusion-Detection">Fork from GitHub</a></li>
+                    <li class="list-inline-item"><a href="https://github.com/mk-armah/WSN-Intrusion-Detection/archive/refs/heads/model.zip">Download</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-4 mx-auto text-muted text-center small-xl">
+                &copy; 2021 Chael.AI - All Rights Reserved
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+<!-- <script src="js/scripts.js"></script> -->
+<script src = "{{url_for('js',path = 'scripts.js')}}"></script>
+</body>
+</html>
