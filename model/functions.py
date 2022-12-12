@@ -1,5 +1,8 @@
 from typing import Optional, Union
 import pandas as pd
+import numpy as np
+import time
+import re
 from enum import Enum
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import AdaBoostClassifier
@@ -126,10 +129,10 @@ class Metrics:
         return cv_scores
 
 
-    def get_roc_auc_score(self):
+    def get_roc_auc_score(self,y_test,y_probas):
         """roc auc score"""
 
-        roc_auc = roc_auc_score(y_test,y_probas, multi_class='ovr')
+        roc_auc = roc_auc_score(y_test,y_probas, multi_class = 'ovr')
         
         if self.verbose >= 0:
             print("Adaboost Classifier RoC/AuC Score : {}".format(nb_roc_auc))
@@ -137,28 +140,28 @@ class Metrics:
         return roc_auc
     
     
-def Calc_Detection_Speed(func):
-    def wrap():
-        times = []
-        for i in range(100):
-            start_time = time.time()
-            func().predict(X_test.values.astype(np.float32)) #score the testing data
-            times.append(time.time() - start_time)
-        avg_inf_time = np.mean(times)
-        
-        pattern= "ds_(.*)"
-        match = re.search(pattern,func.__name__)
-
-        if match:
-            content = match.group(1)
-            algorithm = re.sub('_'," ",content)
-            formatted_results = algorithm+" Classifier has an average speed of : {}s".format(round(avg_inf_time,3))
-        else:
-            print("Unrecognized Algorithm naming convention")
+    def Calc_Detection_Speed(self,func):
+        def wrap():
+            times = []
+            for i in range(100):
+                start_time = time.time()
+                func().predict(X_test.values.astype(np.float32)) #score the testing data
+                times.append(time.time() - start_time)
+            avg_inf_time = np.mean(times)
             
-        return formatted_results
-    
-    return wrap
+            pattern= "ds_(.*)"
+            match = re.search(pattern,func.__name__)
+
+            if match:
+                content = match.group(1)
+                algorithm = re.sub('_'," ",content)
+                formatted_results = algorithm+" Classifier has an average speed of : {}s".format(round(avg_inf_time,3))
+            else:
+                print("Unrecognized Algorithm naming convention")
+                
+            return formatted_results
+        
+        return wrap
 
 
 
