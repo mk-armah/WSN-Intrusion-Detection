@@ -1,0 +1,21 @@
+version: '3'
+services:
+  api:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    image: mkarmah/wsn-intrusion-detection:api
+    
+    ports:
+      - "8000:8000"
+    environment:
+      - FASTAPI_APP=main:app
+      - FASTAPI_ENV=development
+
+  frontend:
+    build:
+      context: ./streamlit-frontend
+      dockerfile: Dockerfile
+    image: mkarmah/wsn-intrusion-detection:frontend
+    ports:
+      - "8501:8501"

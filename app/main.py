@@ -11,9 +11,20 @@ import numpy as np
 from fastapi.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 from fastapi import Request
-
+from fastapi.middleware.cors import CORSMiddleware
 
 app  = FastAPI()
+
+#origins = ["http://127.0.0.1:8501","http://localhost:8501/","http://172.20.0.3:8501","http://41.155.15.134:8501"],
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
+
+
 
 templates = Jinja2Templates(directory="./templates")
 
@@ -70,6 +81,7 @@ def predictions( is_ch: int, dist_to_ch: int|float,
                 model = joblib.load(modelpath)
 
             except Exception as exc:
+
                 return {'status':"model unavailable"}
 
             prediction = model.predict(np.array(features).reshape(1,-1))  

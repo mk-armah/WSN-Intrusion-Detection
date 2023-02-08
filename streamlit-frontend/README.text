@@ -1,0 +1,15 @@
+Description of Features
+
+isCH - A flag to distinguish whether the node is CH with value 1 or normal node with value 0.
+
+Dist_To_CH - The distance between the node and its CH in the current round.
+
+ADV_S - The number of advertise CH broadcast messages sent to the nodes.
+
+ADV_R - The number of advertise CH messages received from CHs
+
+JOIN_S - The number of join request messages sent by the nodes to the CH
+
+JOIN_R - The number of join request messages received by the CH from the nodes.
+
+SCH_S - The number of advertise TDMA schedule broadcast messages sent to the nodes.

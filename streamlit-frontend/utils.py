@@ -23,7 +23,7 @@ def predict(model,**kwargs):
         print("an input is feature was excluded {}".format(ass))
                  
 
-    url = "http://wsn-api.herokuapp.com/adaboost/predict?"
+    url = "http://api:8000/adaboost/predict"
     output = requests.get(url= url,params = kwargs)
     
     return output
